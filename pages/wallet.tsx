@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { } from "@solana/web3.js";
 import { NextPage } from "next";
 import { Button, Tooltip, Drawer, Typography } from "antd";
 import { useGlobalState } from "../context";
@@ -33,7 +34,7 @@ const Wallet: NextPage = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, [account, router, network]);
+  }, [account, router, network, setBalance]);
 
   const airdrop = async () => {
     setAirdropLoading(true);

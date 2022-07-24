@@ -2,8 +2,8 @@ import React, { createContext, useContext } from "react";
 import { Keypair, Cluster } from "@solana/web3.js";
 
 export type GlobalContextType = {
-  network: Cluster | undefined;
-  setNetwork: React.Dispatch<React.SetStateAction<Cluster | undefined>>;
+  network: Cluster;
+  setNetwork: React.Dispatch<React.SetStateAction<Cluster>>;
   account: Keypair | null;
   setAccount: React.Dispatch<React.SetStateAction<Keypair | null>>;
   mnemonic: string | null;

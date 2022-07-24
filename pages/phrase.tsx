@@ -43,7 +43,7 @@ const Phrase: NextPage = () => {
 
     // This line sets the account to context state so it can be used by the app
     setAccount(newAccount);
-  }, []);
+  }, [setAccount, setMnemonic]);
 
   const showPopconfirm = () => {
     setVisible(true);
